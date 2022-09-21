@@ -1,0 +1,10 @@
+=>axios:sends data.
+=>cors: helps in translating data.
+
+=>API: provides data in the form of consumers.
+1)get &post (read)
+2)put (update one thing)
+3)patch (update ll the things)
+4)delete
+
+=>fragment: the div after component in react

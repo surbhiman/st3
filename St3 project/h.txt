@@ -1,0 +1,10 @@
+<div class="universe">
+                  <style>
+                    body {
+                      background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210115/pngtree-hand-drawn-cartoon-universe-outer-space-outer-space-background-image_519629.jpg');
+                      background-repeat: no-repeat;
+                      background-attachment: fixed;
+                      background-size: cover;
+                    }
+                    </style>
+                </div>

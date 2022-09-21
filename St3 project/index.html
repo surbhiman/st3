@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ST3 project by 2010990922</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+
+    <script>
+
+        function my_func(p){
+
+            let weight = document.getElementById("inputbox").value;
+            
+            if(p=='sun'){
+                 weight = weight*27.01;
+                 
+            } 
+            
+            else if(p=='mercury'){
+                weight = weight*0.38;
+                
+            }
+
+            else if(p=='venus'){
+                weight = weight*0.91;
+
+            }
+
+            else if(p=='earth'){
+                weight = weight*1.0;
+
+            }
+
+            else if(p=='mars'){
+                weight = weight*0.38;
+ 
+            }
+
+            else if(p=='jupiter'){
+                weight = weight*2;
+                          
+            }
+
+            else if(p=='saturn'){
+                weight = weight*1.06;
+            }
+
+            else if(p=='uranus'){
+                weight = weight*0.92;
+                
+            }
+            
+            else if(p=='neptune'){
+                weight = weight*1.19;
+                
+            }
+
+            else if(p=='pluto'){
+                weight = weight*0.06;
+            
+            }
+
+            document.getElementById('output').innerHTML = "Weight on " + p + " is " + weight;
+    
+        }
+
+
+       
+    </script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="parent">
+          <div class="universe">
+            <style>
+              body {
+                background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210115/pngtree-hand-drawn-cartoon-universe-outer-space-outer-space-background-image_519629.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+              }
+              </style>
+          </div>
+
+  
+            
+
+                <div class="sun">
+                    <img id="sun" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQCtyawjljerHFdVNxXf3csgVW70QPIZipJCI4ed40H8o8JQE0HbHNmSHFTCLIkpcjl5g&usqp=CAU" onclick="my_func('sun')" >
+                </div>
+
+                <div class="mercury">
+                    <img id="mercury" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8OR-ua8GUIXyuXVZjMttAqx-V5dgvGYbNvA&usqp=CAU" onclick="my_func('mercury')" >
+                </div>
+
+                <div class="venus">
+                    <img id="venus" src="https://t3.ftcdn.net/jpg/01/36/45/44/360_F_136454477_DVq9mWbYeoO9W9l43kwF4DUCoa3s3jw7.jpg" onclick="my_func('venus')" >
+                </div>
+
+                <div class="earth">
+                    <img id="earth" src="https://thumbs.dreamstime.com/b/cartoon-earth-idea-illustration-planet-47065995.jpg" onclick="my_func('earth')" >
+                </div>
+
+                <div class="mars">
+                    <img id="mars" src="https://grid.gograph.com/cartoon-mars-sign-vector-illustration_gg74483370.jpg" onclick="my_func('mars')">
+                </div>
+
+                <div class="jupiter">
+                    <img id="jupiter" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMj9oUV_thRJssSmi3N_GbwSWmASWQ5Zeqlyz_H-ecLFo6YKk99X2gHNhumeHEoE1byX8&usqp=CAU" onclick="my_func('jupiter')" >
+                </div>
+
+                <div class="saturn">
+                    <img id="saturn" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBmv1dfaotT0OYsAUhYxNUZMUkkLxEgGIyE4YKlINw-PwiFncZJWLP_Z5AKdAjFLisbK0&usqp=CAU" onclick="my_func('saturn')" >
+                </div>
+
+                <div class="uranus">
+                <img id="uranus" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2hVrXCc_fIO-FN1QxZfXHgoGc_lSlmkrsjAD58_A0vS8nXOxVs6duAGip6xBiNmjamsA&usqp=CAU" onclick="my_func('uranus')" >
+
+                </div>
+                <div class="neptune">
+                    <img id="neptune" src="https://c8.alamy.com/comp/HXJ3T5/a-cartoon-illustration-of-the-planet-neptune-holding-a-sign-HXJ3T5.jpg"  onclick="my_func('neptune')">
+                </div>
+
+                <div class="pluto">
+                   <img id="pluto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWSPwg-9cH_ddjtkoc_-A333tQrEVzUTfjFw2irn3XYJJHAqyyvSG17aBZ4qc7eDfa1nA&usqp=CAU" onclick="my_func('pluto')" >
+                </div>
+
+            </div>  
+
+
+
+            <div class="mycontent">
+                <div style="color: white;">
+                  <h1 class="font-effect-fire">Objects weight on different planets</h1>
+                    
+                </div>
+    
+                <div class="inputbox">
+                    <input type="number" id="inputbox"> 
+
+                    
+                </div>
+    
+    
+                <div style="color: white;">
+                    <h2 id="output"></h2>
+                </div>
+                
+            </div>
+           
+   
+            
+        </div>
+
+   
+
+    </div>
+
+
+    
+    
+</body>
+</html>

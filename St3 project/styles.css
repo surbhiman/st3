@@ -1,0 +1,153 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#parent{
+    position: relative;
+}
+
+#parent div img{
+    position: absolute;
+    border-radius: 50%;
+} 
+
+
+#parent div img:hover{
+    transform: scale(1.3);
+}
+
+.universe img{
+    height: 100vh;
+    width: 100vw;
+}
+
+.sun img{
+    height: 250px;
+    width: 250px;
+    left: 85px;
+    top: 10px;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.mercury img{
+    height: 150px;
+    width: 150px;
+    left: 15px;
+    top: 150px;
+    z-index: 3;
+    border-radius: 50%;
+}
+
+.venus img{
+    height: 160px;
+    width:160px;
+    top: 300px;
+    left: 50px;
+    z-index: 3;
+    border-radius: 50%;
+}
+
+.earth img{
+    height: 170px; 
+    width:170px;
+    top: 400px;
+    left: 150px;
+    border-radius: 50%;
+}
+
+.mars img{
+    height: 150px;
+    width:150px;
+    top: 440px;
+    left: 300px;
+    border-radius: 50%;
+}
+
+.jupiter img{
+    height: 280px;
+    width:280px;
+    top: 360px;
+    left: 445px;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.saturn img{
+    height: 350px;
+    width:430px;
+    top: 300px;
+    left: 650px;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.uranus img{
+    height: 210px;
+    width:210px;
+    top: 320px;
+    right: 120px;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.neptune img{
+    height: 220px;
+    width:220px;
+    /* margin: 870px 0px 0px 10px; */
+    top: 130px;
+    right: 30px;
+    border-radius: 50%;
+}
+
+.pluto img{
+    height: 150px;
+    width:150px;
+    top: 20px;
+    right: 160px;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+
+.inputbox{
+   
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+   margin: 30px 0px;
+}
+
+.inputbox input{
+    height: 80px;
+    width: 300px;
+    outline: black;
+    font-size: 50px;
+    border-radius: 5px;
+    background-color: black;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKfuQ2RuILZkgXJFURNnXB25sp_uRRpoLJqQ&usqp=CAU');
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    box-shadow: 10px 10px 8px black;
+}
+
+.mycontent{
+
+    position: absolute;
+    font-family:"Sofia", sans-serif;
+    z-index: 1;
+    left: 450px;
+    top: 30px;
+        text-align: center;
+        font-size: 20px;
+        color: wheat;
+        color: white;
+        text-shadow: -5px 2px 0 #000,
+                      5px 2px 0 #000,
+                     5px -2px 0 #000,
+                    -5px -2px 0 #000;
+
+                }
